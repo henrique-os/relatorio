@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Relatório ETA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <div class="container-form">
+      <div class="content-form">
+        <form id="form-relatorio-eta">
+          <label for="">ETA 1</label>
+          <input type="number" id="input-eta1" />
+
+          <label for="">ETA 2</label>
+          <input type="number" id="input-eta2" />
+
+          <label for="">ETA 3</label>
+          <input type="number" id="input-eta3" />
+
+          <label for="">Cisterna</label>
+          <input type="number" id="input-cisterna" />
+
+          <label for="">Turbidez água tratada</label>
+          <input type="number" id="input-turbidez-agua-tratada" />
+
+          <label for="">Cloro residual água tratada</label>
+          <input type="number" id="input-cloro" />
+
+          <label for="">Turbidez água bruta</label>
+          <input type="number" id="input-turbidez-agua-bruta" />
+
+          <label for="">pH água bruta</label>
+          <input type="number" id="input-ph-bruto" />
+          <button id="btn-change-values">Inserir dados</button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content">
+        <p class="content-msg">
+          Status: <br />
+          ETA 1: <span id="vazao-eta1"></span> m³<br />
+          ETA 2: <span id="vazao-eta2"></span> m³<br />
+          ETA 3: <span id="vazao-eta3"></span> m³<br /><br />
+          Total captado: <span id="total-captado"></span> m³<br />
+
+          Cisterna: <span id="cisterna"></span> m³<br />
+
+          Reservatório elevado: <span id="reserv-elevado">1100</span> m³
+          <br /><br />
+          Turbidez água tratada:<span id="turbidez-agua-tratada"></span>
+          NTU<br />
+          Cloro residual água tratada:<span id="cloro-agua-tratada"></span>
+          mg/l<br /><br />
+          Turbidez água bruta: <span id="turbidez-agua-bruta"></span> NTU<br />
+          pH água bruta:<span id="ph-agua-bruta"></span><br />
+        </p>
+        <button id="btn-copy-data">Copiar</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
